@@ -1,6 +1,6 @@
-const UserService = require("../services/UserService");
-const { Sucessful, Error } = require("../classes");
-const { encrypt, decrypt } = require("../functions/crypt");
+const { UserService } = require("../../services");
+const { Sucessful, Error } = require("../../classes");
+const { encrypt } = require("../../functions/crypt");
 
 module.exports = {
   register: async (req, resp) => {
